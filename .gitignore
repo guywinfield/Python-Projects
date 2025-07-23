@@ -1,0 +1,4 @@
+# remove these files
+.turing_venv
+.idea
+.iml
