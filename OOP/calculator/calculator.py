@@ -1,5 +1,5 @@
 from math import sqrt
-
+from typing import Union
 
 class Calculator:
     """
@@ -12,13 +12,9 @@ class Calculator:
     def __init__(self):
         self.result = 0
 
-    def add(self, a, b=None):
+    def add(self, a: float, b: Union[float, None]):
         """
         Add two values together or a single value from the existing result in memory.
-
-        Args:
-            a (float): The first value to add (or the only value if b is None).
-            b (float, optional): The second value to add. Defaults to None.
 
         Returns:
             float: The updated result after addition.
